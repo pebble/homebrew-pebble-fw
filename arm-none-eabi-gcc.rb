@@ -6,6 +6,8 @@ class ArmNoneEabiGcc < Formula
 
   def install
     prefix.install 'arm-none-eabi', 'bin', 'lib', 'share'
+    system 'mv', "#{bin}/arm-none-eabi-gdb", "#{bin}/arm-none-eabi-gdb-no-py"
+    system 'mv', "#{bin}/arm-none-eabi-gdb-py", "#{bin}/arm-none-eabi-gdb"
   end
 end
 
