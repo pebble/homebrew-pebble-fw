@@ -1,5 +1,5 @@
 class PebbleQemuDev < Formula
-  homepage "https://github.com/pebble/qemu"
+  homepage "https://github.com/pebble/qemu-dev"
   url "git@github.com:pebble/qemu-dev.git", :revision => "0471ba2", :using => :git
   head "git@github.com:pebble/qemu-dev.git", :using => :git
 
