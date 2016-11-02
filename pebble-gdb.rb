@@ -6,6 +6,11 @@ class PebbleGdb < Formula
   sha256 "834ff3c5948b30718343ea57b11cbc3235d7995c6a4f3a5cecec8c8114164f94"
   version "7.12-pebble1"
 
+  bottle do
+    sha256 "ebc1f0c26473a499e27db00211fef83cedb9d593c828aa5bf2d56728b14e8913" => :el_capitan
+    sha256 "acc158191ef8f3960dc913a71510d4b18ac757da2d8b9f389afaf27982cee078" => :sierra
+  end
+
   option "without-python", "Use the system Python; by default the Homebrew version of Python is used"
 
   depends_on "pkg-config" => :build
