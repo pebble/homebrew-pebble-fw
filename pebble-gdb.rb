@@ -8,7 +8,6 @@ class PebbleGdb < Formula
 
   bottle do
     root_url "http://pebble-homebrew.s3.amazonaws.com"
-    cellar :any
     sha256 "ebc1f0c26473a499e27db00211fef83cedb9d593c828aa5bf2d56728b14e8913" => :el_capitan
     sha256 "acc158191ef8f3960dc913a71510d4b18ac757da2d8b9f389afaf27982cee078" => :sierra
   end
