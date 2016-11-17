@@ -3,16 +3,11 @@ require 'formula'
 class Freetype < Formula
   homepage 'http://www.freetype.org'
   url 'http://download.savannah.gnu.org/releases/freetype/freetype-2.4.11.tar.bz2'
-  sha1 'b15e5a0b30c1e854484b410340f6429ad1253c74'
+  sha256 'ef9d0bcb64647d9e5125dc7534d7ca371c98310fec87677c410f397f71ffbe3f'
 
   keg_only :provided_pre_mountain_lion
 
   option :universal
-
-  bottle do
-    # Included with X11 so no bottle needed before Mountain Lion.
-    sha1 '7dc4747810e51beb99fd36c8f5baade6e65d19b7' => :mountain_lion
-  end
 
   def install
     ENV.universal_binary if build.universal?
